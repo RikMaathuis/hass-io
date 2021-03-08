@@ -1,23 +1,15 @@
 {
-  "name": "Hello world",
-  "version": "1.1",
-  "slug": "hello_world",
-  "description": "My first real add-on!",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "name": "Audio Player",
+  "version": "1.41",
+  "slug": "audio_player",
+  "description": "Play audio files",
   "startup": "application",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "boot": "auto",
-  "options": {
-    "beer": true,
-    "wine": true,
-    "liquor": false,
-    "name": "world",
-    "year": 2021
-  },
-  "schema": {
-    "beer": "bool",
-    "wine": "bool",
-    "liquor": "bool",
-    "name": "str",
-    "year": "int"
-  }
+  "stdin": true,
+  "audio": true,
+  "hassio_api": true,
+  "options": {},
+  "schema": {},
+  "host_network": true
 }
